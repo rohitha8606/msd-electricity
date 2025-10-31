@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>APCPDCL - Know & Pay Your Bill</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>APCPDCL Customer Dashboard</h1>
+    <form id="checkForm">
+      <label for="serviceNumber">Service Number (13 digits):</label>
+      <input type="text" id="serviceNumber" name="serviceNumber" maxlength="13" required>
+      
+      <label for="aadhaarNumber">Aadhaar Number (12 digits):</label>
+      <input type="text" id="aadhaarNumber" name="aadhaarNumber" maxlength="12" required>
+      
+      <button type="submit">Check Bill Status</button>
+    </form>
+    
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
